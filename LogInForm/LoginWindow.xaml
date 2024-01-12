@@ -1,0 +1,29 @@
+﻿<Window x:Class="LogInForm.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogInForm"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="300" Width="300" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="25" Margin="20">
+    <StackPanel>
+        <Label Content="Log In" HorizontalAlignment="Center" FontSize="25" Foreground="White" />
+            <Separator></Separator>
+
+            <Label Content="Username" Foreground="white"/>
+        <!-- Ask the user to provide data-->
+            <TextBox x:Name="txtUsername" Background="#545d6a" FontSize="18" Foreground="white"/>
+
+            <Label Content="Password" Foreground="white"/>
+            <PasswordBox x:Name="passwordBox" Background="#545d6a" Foreground="White" FontSize="18"/>
+
+            <Button x:Name="Submit_" Content="Log in" Background="#545d6a" Foreground="White" 
+                    Margin="60,10" Click="Submit"/>
+
+
+
+        </StackPanel>
+    </Border>
+
+</Window>
